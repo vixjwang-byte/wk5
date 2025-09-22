@@ -1,0 +1,92 @@
+  section{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: lightgray;
+  }
+
+  /* Character card styling */
+  .grid div {
+    background: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid blue;
+  }
+  
+  /* Images */
+  .grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .gallery img {
+    border: 3px yellow dashed;
+    border-radius: 50px;
+
+  }
+  
+  /* Headings */
+  .character h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+  }
+    
+  .grid dt {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .grid dd {
+    margin: 0;
+    color: #555;
+  }
+  
+
+  /* **** Student code starts here */
+dl{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    align-content: stretch;
+    justify-items:left baseline;
+    gap: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
+    justify-items: last baseline;
+    gap: 10px;
+    padding: 15px;
+}
+
+.grid div {
+  background: #f2f2f2;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.grid div:nth-of-type(even) img {
+  filter: grayscale(100%);
+  border: 25px solid black;
+  box-sizing: border-box;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+ 
+
+.gallery:hover {
+    transform: scale(1.1);
+}
+
+
