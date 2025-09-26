@@ -49,16 +49,16 @@
 dl{
     display: grid;
     grid-template-columns:auto 1fr;
-    align-content: stretch;
-    justify-items:left baseline;
+    /* align-content: stretch; */
+    justify-items: baseline;
     gap: 10px;
 }
 
 .grid{
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: space-around;
-    justify-items: last baseline;
+    /* justify-content: space-around; */
+    justify-items: baseline;
     gap: 10px;
     padding: 15px;
 }
@@ -81,12 +81,15 @@ dl{
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  transition: transform 0.3s;
+  padding: 15px;
 }
- 
 
-.gallery:hover {
-    transform: scale(1.1);
+.gallery img {
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 
