@@ -114,8 +114,15 @@
     color: #eee;
   }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+
   .grid > div {
-    background: #111
-    border 1px solid #EB5B00;
+    background: black;
+    color: white;
+    border: 1px solid #EB5B00;
   }
 }
